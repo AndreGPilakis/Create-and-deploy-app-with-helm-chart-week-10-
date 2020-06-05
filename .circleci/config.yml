@@ -79,11 +79,11 @@ jobs:
           at: ./
       - setup-cd
       - run:
-        name: deploy infra
-        command: |
-          cd artifacts/infra
-          make init
-          make up
+          name: deploy infra
+          command: |
+            cd artifacts/infra
+            make init
+            make up
 
 
 workflows:
