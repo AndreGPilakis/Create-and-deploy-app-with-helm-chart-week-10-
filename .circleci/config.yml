@@ -84,7 +84,7 @@ jobs:
             cd artifacts/infra
             make init
             make up
-            terraform output endpoint > ../endpoint.txt
+            terraform output endpoint > ../dbendpoint.txt
       - run:
           name: upgrade
           command: |
